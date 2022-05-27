@@ -1,0 +1,7 @@
+<h3>input-output-decorator works!</h3>
+<p>Transfer data from parent to child component:--{{item}}</p>
+
+
+<label for="item-input">Add an item:- </label>
+<input #newItem type="text" id="item-input" >
+<button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>

@@ -1,0 +1,13 @@
+<h4>lecture40 works!</h4>
+
+<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+    <input type="text" placeholder="Enter Your Email" name="user" formControlName="user">
+    <span style="color: red; padding:12px;" *ngIf="userValidator && userValidator.invalid && userValidator.touched">Please Enter Valid Email</span>
+    <br><br>
+    <input type="password" placeholder="Enter Your Password" name="password" formControlName="password">
+    <span style="color: red; padding:12px;" *ngIf="passwordValidator && passwordValidator.invalid && passwordValidator.touched">Please Enter Valid Password</span>
+    <br><br>
+    <button [disabled]="loginForm.invalid">Login</button> 
+
+
+</form>

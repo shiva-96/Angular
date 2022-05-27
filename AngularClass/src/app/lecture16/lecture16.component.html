@@ -1,0 +1,24 @@
+<h4>lecture16 works!</h4>
+
+
+<p *ngIf="show else elseBlock">If condition is satisfied here. </p>
+<ng-template #elseBlock>
+    <p> Else condition is satisfied here.</p>
+</ng-template>
+
+
+<div *ngIf="name == 'shiva'; then ifNameBlock  else elseNameBlock"></div>
+<ng-template #ifNameBlock>
+    <p>If NAME condition is satisfied.</p>
+</ng-template>
+<ng-template #elseNameBlock>
+    <p>Else block for name is satisfied.</p>
+</ng-template>
+
+
+<!-- elseif block:--- there is nothing concept of elseif condition in Angular. -->
+<ng-template  [ngIf]="name === 'Ronny'">
+    <p>Name written in name variable is Ronny</p>
+</ng-template>
+
+

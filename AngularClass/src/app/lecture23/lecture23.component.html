@@ -1,0 +1,13 @@
+<h4>lecture23 works!</h4>
+
+<form #formData="ngForm" (ngSumit)="getData(formData.value)">
+    <input type="text" ngModel  name="user" placeholder="Enter Your Name">
+    <br>
+    <input type="text" ngModel name="email" placeholder="Enter email">
+    <br>
+    <input type="text" ngModel name="password" placeholder="Enter password">
+    <br>
+    <button>Submit</button>
+
+</form>
+<li>{{userData.user}}</li>

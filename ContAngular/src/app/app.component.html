@@ -1,0 +1,49 @@
+<a routerLink="lec44/1">Click Here To Open Lec-44</a>
+<br>
+<a routerLink="lec44/2">Click Here To Open Lec-44</a>
+<br>
+<a routerLink="lec44/3">Click Here To Open Lec-44</a>
+<br>
+<a routerLink="lec44/4">Click Here To Open Lec-44</a>
+<br>
+
+<h2>Module Routing Example</h2>
+<ul>
+    <li>
+        <a routerLink="signup">click here to Sign In</a>
+    </li>
+    <li>
+        <a routerLink="logout">click here to Logout</a>
+    </li>
+</ul>
+
+<hr>
+
+<app-input-output-decorator [item]="currentItem" (newItemEvent)="addItem($event)"></app-input-output-decorator>
+<!-- <app-input-output-decorator ></app-input-output-decorator> -->
+
+<div *ngFor="let item of items">{{item}}</div>
+<hr>
+
+
+<h2>Admin Routing !!</h2>
+<ul>
+    <li>
+        <a routerLink="admin/login">click here to Sign In</a>
+    </li>
+    <li>
+        <a routerLink="admin/list">click here to Logout</a>
+    </li>
+</ul>
+
+<h2>User Routing !!</h2>
+<ul>
+    <li>
+        <a routerLink="user/login">click here to Sign In</a>
+    </li>
+    <li>
+        <a routerLink="user/list">click here to Logout</a>
+    </li>
+</ul>
+
+<router-outlet></router-outlet>

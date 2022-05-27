@@ -1,0 +1,55 @@
+<h1 appRedEle>Angular Tutorial By {{title}}</h1>
+<hr>
+<hr>
+<!-- Lecture 12 -->
+
+<input type="text" name="" id="inputValue" (input)="getData()" placeholder="getData() Value">
+<p>Entered Value Of getData() is :-- {{displayVal}}</p>
+ 
+
+<!-- <input type="text" name="" id="inValue" #data (input)="getData2(data.value)" placeholder="getData2() Value"><br>
+<button  #data (click)="getData2(data.placeholder)">Click Me</button> -->
+<input type="text" name="" id="inValue" #data  placeholder="getData2() Value"><br>
+<button  (click)="getData2(data.value)">Click Me</button><br>
+<p>Entered Value Of getData2() is :-- {{displayVal2}} </p>
+<hr>
+
+
+
+
+<app-lecture13></app-lecture13>
+<hr>
+<app-lecture15></app-lecture15>
+<hr>
+<app-lecture16></app-lecture16>
+<hr>
+<app-lecture18></app-lecture18>
+<hr>
+<app-lecture23></app-lecture23>
+<hr>
+<app-child-component [item]="parentVariable"></app-child-component>
+<!-- <ul *ngFor="let users of userDetails">
+    <app-child-component [itemDetails]="users"></app-child-component>
+</ul> -->
+<hr>
+<h4>Making Custom Pipes</h4>
+<h2>{{20 | usdInr : 20}}</h2>
+
+<hr>
+<app-lecture38></app-lecture38>
+<hr>
+<app-lecture40></app-lecture40>
+<h5 appRedEle>Making Custom Directive</h5>
+<hr>
+
+<a routerLink="dRout/1">Dynamic Routing</a>
+<br>
+<a routerLink="dRout/2">Dynamic Routing</a>
+<br>
+<a routerLink="dRout/3">Dynamic Routing </a>
+<br>
+<br>
+<a routerLink="lec13">Lecture 13 Route</a>
+<br>
+
+<router-outlet></router-outlet>

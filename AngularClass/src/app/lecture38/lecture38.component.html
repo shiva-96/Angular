@@ -1,0 +1,12 @@
+<h4>lecture38 works!</h4>
+
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.controls)">
+    <input ngModel type="text" placeholder="Enter mail-id" name="mail" >
+    <br>
+    <br>
+    <input ngModel type="password" placeholder="Enter Your Password" name="password" >
+    <br>
+    <br>
+    <button>Submit Form</button>
+</form>
+<button (click)="userLogin(loginForm.value)">Submit Button Outside the FORM tag  </button>
